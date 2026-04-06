@@ -21,7 +21,6 @@ cat > "$OUTPUT" << 'HTMLEOF'
 
     :root {
       --bg: #080c0a;
-      --surface: #0f1410;
       --border: #1a2e1f;
       --text: #a3c4a8;
       --text-dim: #4a6b4e;
@@ -117,7 +116,7 @@ cat > "$OUTPUT" << 'HTMLEOF'
       text-decoration: none;
       border: 1px solid transparent;
       border-radius: 2px;
-      transition: all 0.15s ease;
+      transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, text-shadow 0.15s ease;
       margin-bottom: 2px;
     }
 
