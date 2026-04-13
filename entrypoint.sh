@@ -157,7 +157,7 @@ printf '%s\n' "$SORTED" | while IFS= read -r app; do
   else
     url="$value"
   fi
-  printf '      <li><a href="%s" target="_blank">%s</a></li>\n' "$url" "$name" >> "$OUTPUT"
+  printf '      <li><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></li>\n' "$url" "$name" >> "$OUTPUT"
 done
 
 # Close HTML
