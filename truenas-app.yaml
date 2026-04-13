@@ -1,0 +1,9 @@
+services:
+  app-home:
+    image: ghcr.io/johnny12times/truenas-app-home:latest
+    environment:
+      DEFAULT_HOST: "192.168.1.100"
+      APPS: "plex=32400,sonarr=8989,radarr=7878,github=https://github.com"
+    ports:
+      - "8080:80"
+    restart: unless-stopped
